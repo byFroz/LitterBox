@@ -41,7 +41,7 @@ namespace LitterBox
         ~File();
         bool IsReal();
         uintptr_t CreateFile(string path);
-        uintptr_t EditFile(char mode, string content); /* Has the ability to rename; however, if @mode == 'r', content becomes 
+        uintptr_t EditFile(char mode, string content); /* Has the ability to rename; however, if @mode == 'r', @content becomes 
                                                         * (this->m_path)'s new path. */
         uintptr_t ReadFile(string path);
         uintptr_t DeleteFile(string path);
