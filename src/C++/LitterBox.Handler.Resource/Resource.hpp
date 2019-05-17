@@ -22,7 +22,7 @@ namespace LitterBox
     struct Heap
     {
     public:
-        static void* Allocate(unsigend bytes) noexcept; // This function can throw many errors, but I told C++ to snooze them.
+        static void* Allocate(unsigned bytes) noexcept; // This function can throw many errors, but I told C++ to snooze them.
         static uintptr_t Deallocate(void &pointer) noexcept; // Likewise, here.
     };
     
