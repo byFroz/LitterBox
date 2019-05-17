@@ -79,7 +79,10 @@ namespace LitterBox
         if (this->IsRunning())
         {
             HWND hWnd = FindWindowA(NULL, (this->m_label).c_str());
-            return hWnd;
+            if (hWnd)
+                return hWnd;
+            else
+                return nullptr;
         }
         else
             return nullptr;
