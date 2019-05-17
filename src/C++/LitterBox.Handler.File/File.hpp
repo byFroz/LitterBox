@@ -12,9 +12,7 @@
  * operation is true or false.
  *
  * All of the actual file operations
- * (excluding determining if the file
- * is on the disk) are written using
- * C++.
+ * are written using C++.
  *
  * Author(s):
  * + Froz
