@@ -72,7 +72,7 @@ namespace LitterBox
     
     uintptr_t File::CreateFile()
     {
-        if (this->IsReal())
+        if (this->IsReal() || !this->IsReal())
         {
             std::ofstream file;
             file.open((this->m_path).c_str(), std::ios::write);
@@ -83,8 +83,6 @@ namespace LitterBox
             else
                 return 1;
         }
-        else
-            return 1;
     }
     
     uintptr_t File::EditFile(char mode, string content)
