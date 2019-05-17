@@ -64,7 +64,7 @@ namespace LitterBox
     bool File::IsReal()
     {
         std::ifstream file;
-        if (file.open((this->m_path).c_str(), std::ios::read))
+        if (file.open((this->m_path).c_str(), std::ios::read)
             return true;
         else
             return false;
