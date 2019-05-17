@@ -22,7 +22,7 @@
 #include <vector>
 #include <Windows.h>
 
-using string = std::string; // Saves typing "std::" before "string".
+using string = std::string;
 
 namespace LitterBox
 {
